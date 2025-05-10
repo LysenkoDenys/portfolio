@@ -3,16 +3,25 @@
   <head>
     <title>Lysenko`s portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="/favicon.ico" />
     <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Portfolio of Denys Lysenko, a full-stack web developer."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <nav id="navbar">
       <ul>
+        <li><a href="#about" aria-label="Jump to about section">About</a></li>
         <li>
-          <a href="#">About</a>
-          <a href="#">Work</a>
-          <a href="#">Contact</a>
+          <a href="#projects" aria-label="Jump to project section"
+            >View My Work</a
+          >
+        </li>
+        <li>
+          <a href="#contacts" aria-label="Jump to contacts section">Contact</a>
         </li>
       </ul>
     </nav>
@@ -20,56 +29,138 @@
       <section id="welcome-section">
         <h1>Hey I am Denys</h1>
         <p>a web developer</p>
+        <img src="your-photo.jpg" alt="Photo of Denys Lysenko" />
+        <a class="cta-button" href="#projects">View My Work</a>
+      </section>
+      <section id="my-skills">
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React.js</li>
+          <li>Next.js</li>
+          <li>Node.js</li>
+          <li>MongoDB</li>
+          <li>Python</li>
+          <li>Git(GitHub)</li>
+        </ul>
       </section>
       <section id="projects">
-        <div class="project-tile"></div>
-        <a href="#"></a>
-        <div class="project-tile"></div>
-        <a href="#"></a>
-        <div class="project-tile"></div>
-        <a href="#"></a>
-        <div class="project-tile"></div>
-        <a href="#"></a>
-        <div class="project-tile"></div>
-        <a href="#"></a>
-        <div class="project-tile"></div>
-        <a href="#"></a>
+        <h2>These are some of my projects</h2>
+        <div class="project-tile">
+          <img src="project1.png" alt="Screenshot of Project 1" />
+          <p>description</p>
+          <a
+            href="https://yourproject.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+        <div class="project-tile">
+          <img src="project1.png" alt="Screenshot of Project 2" />
+          <p>description</p>
+          <a
+            href="https://yourproject.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+        <div class="project-tile">
+          <img src="project1.png" alt="Screenshot of Project 3" />
+          <p>description</p>
+          <a
+            href="https://yourproject.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+        <div class="project-tile">
+          <img src="project1.png" alt="Screenshot of Project 4" />
+          <p>description</p>
+          <a
+            href="https://yourproject.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+        <div class="project-tile">
+          <img src="project1.png" alt="Screenshot of Project 5" />
+          <p>description</p>
+          <a
+            href="https://yourproject.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
+        <div class="project-tile">
+          <img src="project1.png" alt="Screenshot of Project 6" />
+          <p>description</p>
+          <a
+            href="https://yourproject.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Project</a
+          >
+        </div>
       </section>
-      <p>I am what I create!</p>
+      <section id="about">
+        <h2 class="title--dark" id="title05">About Me</h2>
+        <p class="about__item" id="about">
+          Hi, I'm Denys Lysenko, a Frontend Web Developer with a strong passion
+          for creating functional and visually appealing websites. I'm always
+          looking for opportunities to challenge myself and grow professionally
+          in a dynamic, collaborative environment.
+        </p>
+        <p class="about__item">
+          My journey into web development began with a solid foundation in
+          engineering and economics, which helped me develop a methodical,
+          problem-solving mindset. Over the past few years, I have self-educated
+          in various web technologies, including HTML/CSS, JavaScript,
+          TypeScript, Node.js, React.js, and more. I am particularly interested
+          in working with frontend technologies to create seamless, user-centric
+          web applications.
+        </p>
+        <p class="about__item">
+          Currently, I am seeking an entry-level position where I can leverage
+          my skills in coding, problem-solving, and teamwork to contribute to
+          projects and further enhance my abilities. I'm eager to work in a team
+          that values collaboration, creativity, and continuous learning.
+        </p>
+        <p class="about__item">
+          Outside of coding, I enjoy staying up to date with the latest trends
+          in web development, contributing to open-source projects, and
+          experimenting with new tools and frameworks to improve my workflows.
+        </p>
+      </section>
+      <section id="contacts">
+        <h2>Contact Me</h2>
+        <address>
+          <p>Email: lysenkoden@email.com</p>
+          <p>Phone: +380 506 045 095</p>
+          <p>Location: Most, Czech Republic, 43401</p>
+        </address>
+      </section>
     </main>
     <footer id="footer">
       <ul>
         <li>
-          <a
-            href="https://github.com/LysenkoDenys"
-            id="profile-link"
-            target="_blank"
+          <a href="https://facebook.com/yourprofile" target="_blank"
             >Facebook</a
           >
         </li>
         <li>
-          <a
-            href="https://github.com/LysenkoDenys"
-            id="profile-link"
-            target="_blank"
+          <a href="https://linkedin.com/in/yourprofile" target="_blank"
             >LinkedIn</a
           >
         </li>
         <li>
-          <a
-            href="https://github.com/LysenkoDenys"
-            id="profile-link"
-            target="_blank"
-            >GitHub</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://github.com/LysenkoDenys"
-            id="profile-link"
-            target="_blank"
-            >Email</a
-          >
+          <a href="https://github.com/LysenkoDenys" target="_blank">GitHub</a>
         </li>
       </ul>
     </footer>
