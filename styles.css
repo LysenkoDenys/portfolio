@@ -1,6 +1,6 @@
 :root {
   --primary: #2c3e50;
-  --accent: #e67e22;
+  --accent: #118736;
   --background: #fafafa;
 }
 
@@ -24,13 +24,16 @@ h2 {
   margin-bottom: 1rem;
 }
 
+h1 {
+  font-size: 6rem;
+}
+
 section {
   padding: 2rem 0;
 }
 
 section:target h2 {
   color: var(--accent);
-  text-decoration: underline;
 }
 
 a {
@@ -54,7 +57,7 @@ a:focus {
 
 #navbar ul {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   list-style: none;
   justify-content: center;
 }
@@ -261,7 +264,7 @@ main {
 
 #footer ul {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   list-style: none;
   justify-content: center;
 }
