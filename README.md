@@ -1,5 +1,9 @@
 # portfolio
 
+### deployed:
+
+https://lysenko-pf.vercel.app/
+
 //TODO:
 //1.underline links dynamic
 //2. running line with information

@@ -4,6 +4,12 @@
   --background: #fafafa;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -29,7 +35,7 @@ h1 {
 }
 
 section {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 section:target h2 {
@@ -74,9 +80,26 @@ a:focus {
   transition: color 0.3s ease;
 }
 
+@media only screen and (max-width: 768px) {
+  #navbar {
+    height: auto;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0.1rem 0;
+    gap: 0.1rem;
+  }
+
+  #navbar ul li {
+    font-size: 0.5rem;
+  }
+}
+
 main {
   flex: 1;
-  padding-top: 70px;
+  padding-top: 10px;
 }
 
 #welcome-section {
@@ -92,7 +115,7 @@ main {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--accent);
+  border: 5px solid var(--accent);
 }
 
 .cta-button {
@@ -119,11 +142,80 @@ main {
 }
 
 .skills-list li {
-  background: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #2d2d2d;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.skills-list li i {
+  font-size: 1.5rem;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+}
+
+/* Skill-specific icon colors */
+.skill-html i {
+  color: #e34c26;
+}
+.skill-css i {
+  color: #2965f1;
+}
+.skill-js i {
+  color: #f0db4f;
+}
+.skill-ts i {
+  color: #3178c6;
+}
+.skill-react i {
+  color: #61dafb;
+}
+.skill-next i {
+  color: #c9b8b8;
+}
+.skill-node i {
+  color: #68a063;
+}
+.skill-express i {
+  color: #dbe1e6;
+}
+.skill-mongo i {
+  color: #4db33d;
+}
+.skill-postgres i {
+  color: #336791;
+}
+.skill-php i {
+  color: #8892be;
+}
+.skill-docker i {
+  color: #0db7ed;
+}
+.skill-angular i {
+  color: #dd1b16;
+}
+.skill-python i {
+  color: #3776ab;
+}
+.skill-git i {
+  color: #f1502f;
+}
+.skill-redux i {
+  color: #764abc;
+}
+.skill-testing-lib i {
+  color: #e33;
+}
+.skill-jest i {
+  color: #caaeb6;
 }
 
 #projects {
@@ -142,7 +234,7 @@ main {
   transition: transform 0.2s ease;
 }
 
-.project-tile a {
+.project-tile #profile-link {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
@@ -162,13 +254,14 @@ main {
   border-radius: 8px;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-    padding: 0 0.5rem;
-  }
+.project-tile img:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.5s;
+}
 
+@media only screen and (max-width: 768px) {
   main {
-    padding-top: 90px;
+    padding-top: 120px;
   }
 
   #navbar ul {
@@ -184,7 +277,9 @@ main {
     grid-template-columns: 1fr;
   }
 
-  h1,
+  h1 {
+    font-size: 3rem;
+  }
   h2 {
     font-size: 1.5rem;
   }
@@ -192,8 +287,8 @@ main {
 
 #about {
   background-color: #f4f4f9;
-  padding: 2rem 1rem;
-  margin: 2rem 0;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -245,7 +340,7 @@ main {
   text-align: center;
   font-style: normal;
   background: #f9f9f9;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 8px;
   max-width: 400px;
   margin: auto;
