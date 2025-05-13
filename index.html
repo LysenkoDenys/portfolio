@@ -5,9 +5,10 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" href="/favicon.ico" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
@@ -18,15 +19,25 @@
       content="Portfolio of Denys Lysenko, a full-stack web developer."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Denys Lysenko | Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of a skilled full-stack developer with React, Node, and more."
+    />
+    <meta name="theme-color" content="#118736" />
+    <meta name="author" content="Denys Lysenko" />
+    <meta
+      name="keywords"
+      content="Denys Lysenko, frontend developer, web portfolio, React developer, JavaScript"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <nav id="navbar">
       <ul>
         <li><a href="#about" aria-label="Jump to about section">About</a></li>
         <li>
-          <a href="#projects" aria-label="Jump to project section"
-            >View My Work</a
-          >
+          <a href="#projects" aria-label="Jump to project section">Work</a>
         </li>
         <li>
           <a href="#contacts" aria-label="Jump to contacts section">Contact</a>
@@ -35,11 +46,12 @@
     </nav>
     <main>
       <section id="welcome-section">
-        <h1>Hey I am Denys</h1>
-        <p>a web developer</p>
+        <h1>Hi, I'm Denys Lysenko</h1>
+        <p>Frontend Developer crafting responsive, high-performance web apps</p>
         <img
           src="https://i.postimg.cc/3x9vDWht/ava.avif"
           alt="Photo of Denys Lysenko"
+          loading="lazy"
         />
         <a class="cta-button" href="#projects">View My Work</a>
       </section>
@@ -96,14 +108,16 @@
               <img
                 src="https://i.postimg.cc/sfpCbGFt/blog.avif"
                 alt="Screenshot of Project blog"
+                loading="lazy"
             /></a>
             <h4>blog</h4>
-            <p>welcome to my blog</p>
+            <p>welcome to my blog [MERN]</p>
             <a
               href="https://github.com/LysenkoDenys/mern-blog/"
               target="_blank"
               rel="noopener noreferrer"
               class="view-button"
+              aria-label="View Blog project on GitHub"
               >View The Project</a
             >
           </div>
@@ -116,14 +130,16 @@
               <img
                 src="https://i.postimg.cc/vHbwy8bD/realtor.avif"
                 alt="Screenshot of Project realtor"
+                loading="lazy"
             /></a>
             <h4>realtor</h4>
-            <p>manage your real estate</p>
+            <p>manage your real estate [React.js]</p>
             <a
               href="https://github.com/LysenkoDenys/realtor-2022-10-22/"
               target="_blank"
               rel="noopener noreferrer"
               class="view-button"
+              aria-label="View Realtor project on GitHub"
               >View The Project</a
             >
           </div>
@@ -136,14 +152,16 @@
               <img
                 src="https://i.postimg.cc/rpfpLxDg/kindergarten.avif"
                 alt="Screenshot of Project kindergarten"
+                loading="lazy"
             /></a>
             <h4>kindergarten</h4>
-            <p>memories of my childhood in the kindergarten</p>
+            <p>memories of my childhood in the kindergarten [React.js]</p>
             <a
               href="https://github.com/LysenkoDenys/kindergarten/"
               target="_blank"
               rel="noopener noreferrer"
               class="view-button"
+              aria-label="View Kindergarten project on GitHub"
               >View The Project</a
             >
           </div>
@@ -156,17 +174,19 @@
               <img
                 src="https://i.postimg.cc/NGD1bV3z/exa.avif"
                 alt="Screenshot of Project exa"
+                loading="lazy"
             /></a>
             <h4>exa</h4>
             <p>
               teach your children and yourself as well maths, languages and
-              wisdom
+              wisdom [JS]
             </p>
             <a
               href="https://github.com/LysenkoDenys/teach-examples/"
               target="_blank"
               rel="noopener noreferrer"
               class="view-button"
+              aria-label="View Exa project on GitHub"
               >View The Project</a
             >
           </div>
@@ -179,14 +199,16 @@
               <img
                 src="https://i.postimg.cc/0jVDQMGs/books.avif"
                 alt="Screenshot of Project books"
+                loading="lazy"
             /></a>
             <h4>books</h4>
-            <p>manage your library</p>
+            <p>manage your library [React.js]</p>
             <a
               href="https://github.com/LysenkoDenys/book-library-app/"
               target="_blank"
               rel="noopener noreferrer"
               class="view-button"
+              aria-label="View Library project on GitHub"
               >View The Project</a
             >
           </div>
@@ -198,48 +220,61 @@
             >
               <img
                 src="https://i.postimg.cc/vHm5KhMH/todo.avif"
-                alt="Screenshot of Project notes"
+                alt="Screenshot of Project todo"
+                loading="lazy"
             /></a>
             <h4>todo</h4>
-            <p>plan your future carefully and more precise</p>
+            <p>
+              organize your tasks and goals using an intuitive, fast interface
+              [React.js]
+            </p>
             <a
               href="https://github.com/LysenkoDenys/Todo-v2-2023-07-15/"
               target="_blank"
               rel="noopener noreferrer"
               class="view-button"
+              aria-label="View Todo project on GitHub"
               >View The Project</a
             >
           </div>
         </div>
         <div class="cta-projects">
-          <a class="cta-button" href="https://github.com/LysenkoDenys"
-            >More Projects</a
+          <a
+            class="cta-button"
+            href="https://github.com/LysenkoDenys"
+            target="_blank"
+            rel="noopener noreferrer"
           >
+            More Projects
+          </a>
         </div>
       </section>
       <section id="about">
         <h2 class="title--dark">About Me</h2>
         <p class="about__item">
-          Hi, I'm Denys Lysenko, a Frontend Web Developer with a strong passion
-          for creating functional and visually appealing websites. I'm always
-          looking for opportunities to challenge myself and grow professionally
-          in a dynamic, collaborative environment.
+          Hi, I'm Denys Lysenko — a Frontend Web Developer passionate about
+          building functional, user-friendly, and visually engaging websites.
+          I'm driven by the challenge of solving real-world problems through
+          clean, efficient code.
         </p>
         <p class="about__item">
-          My journey into web development began with a solid foundation in
-          engineering and economics, which helped me develop a methodical,
-          problem-solving mindset. Over the past few years, I have self-educated
-          in various web technologies, including HTML/CSS, JavaScript,
-          TypeScript, Node.js, React.js, and more. I am particularly interested
-          in working with frontend technologies to create seamless, user-centric
-          web applications.
+          My background in engineering and economics shaped my analytical
+          mindset, which I’ve since applied to web development through
+          self-directed learning. I've built hands-on experience with
+          technologies like HTML, CSS, JavaScript, TypeScript, React.js, and
+          Node.js.
         </p>
         <p class="about__item">
-          Currently, I am seeking an entry-level position where I can leverage
-          my skills in coding, problem-solving, and teamwork to contribute to
-          projects and further enhance my abilities. I'm eager to work in a team
-          that values collaboration, creativity, and continuous learning.
+          I'm now looking for an entry-level opportunity where I can contribute
+          as part of a team, keep growing as a developer, and build meaningful
+          web applications that users love. I value collaboration, creativity,
+          and continuous learning.
         </p>
+        <div class="cta-projects">
+          <a class="cta-button" href="https://github.com/LysenkoDenys"
+            >See more in my CV</a
+          >
+        </div>
       </section>
       <section id="contacts">
         <h2>Contact Me</h2>
