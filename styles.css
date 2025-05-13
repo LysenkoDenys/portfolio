@@ -104,6 +104,7 @@ a:focus {
 main {
   flex: 1;
   padding-top: 10px;
+  margin: 0 10%;
 }
 
 #welcome-section {
@@ -261,15 +262,20 @@ main {
 }
 
 .project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: white;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.2s ease;
+  height: 100%;
+  min-height: 100%;
 }
 
-.project-tile #profile-link {
+.project-tile .view-button {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
@@ -277,6 +283,9 @@ main {
   color: white;
   border-radius: 4px;
   transition: background 0.3s ease;
+}
+.project-tile #profile-link:hover {
+  background-color: #126325;
 }
 
 .project-tile:hover {
@@ -287,6 +296,7 @@ main {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .project-tile img:hover {
@@ -298,9 +308,19 @@ main {
   margin: 0.5rem;
 }
 
+.cta-projects {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-projects .cta-button {
+  margin-top: 0;
+}
+
 @media only screen and (max-width: 768px) {
   main {
     padding-top: 120px;
+    margin: 0;
   }
 
   #navbar ul {
