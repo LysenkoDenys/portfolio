@@ -15,6 +15,3 @@ https://lysenko-pf.vercel.app/
 //8. multi-lingual: en/ua/cz
 //9. test for contrast in lighthouse
 //10. Animated Scroll Effects
-//11. link to CV in About
-
-img in budget, project todo --> notes
